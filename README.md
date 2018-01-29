@@ -9,7 +9,7 @@ Scrub the data to purge state names, case names, common stop words, names, dates
 ### Step 4: Topic Modeling Method Testing
 Running the different topic modeling algorithms: Latent Dirchlet Allocation (LDA) model, the Latent Semantic Analysis (LSA) model, and the Non-negative Matrix Factorization (NMF) model. 
 ### Step 5: Topic Modeling Application to Data
-Description of NMF.
+Description of NMF applied to the processed data. It finds groups that are similar and then creates a dictionary and reverse dictionary to map to the topics and assigns topics to the cases. 
 ## TensorFlow Tutorial
 ### Step 1: Download the data
 In this step the code is assigning the web page to the variable 'url,' defining the function 'maybe_download' and then making a call to the function with the name of the file to be used and the expected size of the file. This downloads the file and returns the download but also checks for an error if the the file isn't found. The function 'read_data' is also defined which is then caled with the file returned from 'maybe_download.' This function parses the data into a list of words.
@@ -18,4 +18,6 @@ The vocabulary size is assigned, the function 'build_dataset' is defined and run
 ### Step 3: Generate training batch
 The 'generate_batch' function is defined which creates the training batch from the global variable data based on the inputs defined as batch size, number of skips, and skip window for the skip-gram model. The batch is a subset of the data.
 ### Step 4: Build and Train
+Run the code on the training data in order to develop the initial model.
 ### Step 5: Begin Training
+Run the model based on the training data on the entire data set created for the model.
